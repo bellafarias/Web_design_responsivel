@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header {
+    background-color: #40A0DD;
+    color: black;
+    padding: 1vw;
+    margin: -8px;
+}
+
+.item {
+    background-color: #40A0DD;
+    border-radius: 15px;
+    margin: 2vw;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #40A0DD;
+    color: black;
+    padding: 2vw;
+    font-size: 15px;
+    margin: -8px;
+}
+
+.garden {
+    padding: 2vw;
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    color: aliceblue;
+}
+
+h2{
+    font-family: 'Shadows Into Light', cursive;
+    color: aliceblue;
+}
+
+p{
+    font-family: 'Shadows Into Light', cursive;
+    color: aliceblue;
+}
+
+body{
+    background-color: rgb(255, 94, 94);
+    color: rgb(255, 0, 47)
+}
+/* medio */
+@media only screen and (min-width:601px) {
+    .garden {
+        grid-template-columns: 50% 50%;
+    }
+    body {
+        background-color: rgb(242, 255, 94);
+        color: rgb(242, 255, 0);
+    }
+}
+/* grande */
+@media only screen and (min-width:900px) {
+    .garden {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    body{
+        background-color: #98D3F8
+    }
+}
+
+.garden::after {
+    content: "";
+    clear: both;
+    display: table;
+}
